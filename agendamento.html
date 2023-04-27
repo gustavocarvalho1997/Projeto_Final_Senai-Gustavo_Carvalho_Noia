@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./font-awesome/css/all.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="./css/nav_bar_style.css" type="text/css" media="all">
+    <!-- CSS ESPECÍFICO -->
+    <link rel="stylesheet" href="./css/agendamento.css" type="text/css" media="all">
+    <!-- CSS ESPECÍFICO -->
+    <link rel="stylesheet" href="./css/footer.css" type="text/css" media="all">
+    <meta name="autor" content="Gustavo Carvalho">
+    <link rel="shortcut icon" href="./img/android-chrome-192x192.png" type="image/x-icon">
+    <!-- MUDAR TITULO -->
+    <title>Agendamento</title>
+</head>
+<body>
+    <!-- MENU -->
+    <input type="checkbox" id="bt_menu">
+    <label for="bt_menu">&#9776</label>
+
+    <nav class="menu">
+        <a href="./index.html" class="logo"><img src="./img/Bigaku Logotipo.png" alt="Logo Bigaku" height="78px"></a>
+        <ul>
+            <li><a href="./noticias.html">Notícias</a></li>
+            <li>
+                <a href="./massagem.html">Massagens</a>
+                <ul>
+                    <li><a href="./massagem.html#1">Dor</a></li>
+                    <li><a href="./massagem.html#2">Relaxar</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./tratamento.html">Tratamentos</a>
+                <ul>
+                    <li><a href="./tratamento.html#1">Facial</a></li>
+                    <li><a href="./tratamento.html#2">Corporal</a></li>
+                    <li><a href="./tratamento.html#3">Capilar</a></li>
+                </ul>
+            </li>
+            <li><a href="./contato.html">Contatos</a></li>
+            <li><a href="./cadastro.html">Cadastro</a></li>
+        </ul>
+    </nav>
+
+    <!-- DIVISOR -->
+    <div class="div">
+        <h1>Agendamento</h1>
+        <hr class="divisor"/>
+    </div>
+    <!-- MAIN -->
+    <main class="agendamento-container">
+        <form onsubmit="return false" class="agendamento-form">
+            <label for="anome">Nome:</label>
+            <input type="text" name="anome" id="anome" required placeholder="Nome Completo"><br>
+
+            <label for="aidade">Idade:</label>
+            <input type="number" name="aidade" id="aidade" required><br>
+
+            <label for="acpf">CPF:</label>
+            <input type="number" name="acpf" id="acpf" required><br>
+
+            <label for="atelefone">Telefone:</label>
+            <input type="tel" name="atelefone" id="atelefone" required placeholder="(ddd) xxxx-xxxx"><br>
+
+            <label for="aservico">Serviço:</label>
+            <select name="aservico" id="aservico" required>
+                <option value="massagem-pedra">Massagem com pedras quentes</option>
+                <option value="massagem-profunda">Massagem profunda</option>
+                <option value="reflexologia">Reflexologia</option>
+                <option value="massagem-shiatsu">Massagem shiatsu</option>
+                <option value="gua-sha">Gua Sha</option>
+                <option value="tratamento-de-rejuvenescimento">Tratamento de rejuvenescimento</option>
+                <option value="ultrassom">Ultrassom</option>
+                <option value="criolipolise">Criolipólise</option>
+                <option value="transplante-capilar">Transplante Capilar</option>
+                <option value="led-capilar">Led Capilar</option>
+            </select><br>
+
+            <label for="adata">Data:</label>
+            <input type="date" name="adata" id="adata" required><br>
+
+            <label for="ahorario">Horário:</label>
+            <select name="ahorario" id="ahorario" required>
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+                <option value="19:00">19:00</option>
+                <option value="20:00">20:00</option>
+                <option value="21:00">21:00</option>
+            </select><br>
+            <button onclick="agendamento();">Agendar</button>
+        </form>
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="f1">
+            <div class="google-app">
+                <h3 class="t-app">Baixe nosso App</h3>
+                <a href="#"><img src="./img/google-play-badge.png" alt="Imagem do Google Play para baixar o aplicativo"></a>
+            </div>
+            <div class="redes-sociais">
+                <h3 class="t-redes">Acesse nossas redes sociais</h3>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="f2">
+            <p>Projeto feito apenas para 📘📖 e ainda em desenvolvimento <a href="melhorias.html" target="_blank">👩‍💻</a></p>
+            <div>
+                <a href="https://github.com/gustavocarvalho1997" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="./js/script.js"></script>
+</body>
+</html>

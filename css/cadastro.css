@@ -1,0 +1,74 @@
+.main-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+h1, h2, form {
+    color: #370F24;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    width: 400px;
+}
+
+h2 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+label, input, select {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #370F24;
+}
+
+label {
+    text-align: end;
+    display: inline-block;
+    width: 115px;
+}
+
+input {
+    width: 280px;
+}
+
+.check, .bcheck {
+    display: inline;
+}
+
+.bcheck {
+    width: 30px;
+}
+
+button {
+    width: 300px;
+    height: 50px;
+    margin: 0 70px;
+    background-color: #F8DDEB;
+    border: 2px solid #370F24;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button:hover {
+    transition: all 1s;
+    background-color: #FFA0D1;
+    color: #10050B;
+    cursor: pointer;
+}
