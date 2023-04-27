@@ -1,0 +1,80 @@
+.massagem-container {
+    width: 100%;
+}
+
+.massagem-child {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titulo h3 {
+    margin-bottom: 5px;
+}
+.titulo hr {
+    margin-bottom: 20px;
+}
+
+.massagem {
+    display: flex;
+    align-items: center;
+}
+
+.massagem img {
+    padding-left: 10px;
+    width: 500px;
+    height: 320px;
+}
+
+.massagem p{
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 60%;
+    margin-left: 30px;
+}
+
+button {
+    width: 300px;
+    height: 50px;
+    margin: 10px 0;
+    background-color: #F8DDEB;
+    border: 2px solid #370F24;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button:hover {
+    transition: all 1s;
+    background-color: #FFA0D1;
+    color: #10050B;
+    cursor: pointer;
+}
+
+@media(max-width: 800px){
+    .titulo h3 {
+        text-align: center;
+    }
+    .massagem {
+        flex-direction: column;
+    }
+
+    .massagem img {
+        width: 500px;
+        height: 320px;
+        margin-bottom: 20px;
+    }
+
+    .massagem p {
+        width: 80%;
+    }
+}

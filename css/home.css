@@ -1,0 +1,268 @@
+/* MAIN */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #370F24;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.apresentacao-img img {
+    min-width: 300px;
+    min-height: 300px;
+}
+
+.apresentacao-texto{
+    width: 50%;
+    font-weight: bold;
+    font-size: 17px;
+    color: #370F24;
+}
+
+.apresentacao-texto p{
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+
+@media(max-width: 800px) {
+    .apresentacao {
+        flex-direction: column;
+    }
+
+    .apresentacao-texto {
+        width: 80%;
+    }
+}
+
+/* CARROSSEL */
+
+.slider {
+    margin: 10px auto 40px;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 1.5s;
+}
+
+.slide img {
+    width: 800px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #FFF;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navigation-auto div {
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #fff;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #fff;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #fff;
+}
+
+@media(max-width: 800px){
+    .slide img {
+        min-width: 800px;
+        min-height: 400px;
+    }
+}
+
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards a {
+    text-decoration: none;
+    color: #370F24;
+    margin-bottom: 70px;
+}
+
+.card1,.card2,.card3 {
+    width: 250px;
+    height: 350px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+/* CARD 1 */
+
+.card1 {
+    background-color: #aedfff;
+}
+
+.card1 img {
+    width: 100%;
+    height: 70%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card1 .t-card {
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.card1:hover {
+    transition: all 1s;
+    background-color: #71c2f8;
+}
+
+/* CARD 2 */
+
+.card2 {
+    background-color: #ffad9f;
+}
+
+.card2 img {
+    width: 100%;
+    height: 70%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card2 .t-card {
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.card2:hover {
+    transition: all 1s;
+    background-color: #ff725f;
+}
+/* CARD 3 */
+
+.card3 {
+    background-color: #b1ffc9;
+}
+
+.card3 img {
+    width: 100%;
+    height: 70%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card3 .t-card {
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.card3:hover {
+    transition: all 1s;
+    background-color: #5dffa6;
+}
+
+@media(max-width:800px){
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards a {
+        margin-bottom: 100px;
+    }
+}

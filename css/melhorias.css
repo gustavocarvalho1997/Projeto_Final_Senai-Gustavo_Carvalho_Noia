@@ -1,0 +1,24 @@
+.melhorias-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.melhorias-child {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+}
+
+.melhorias-container .melhorias-child img {
+    height: 300px;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.melhorias-container .melhorias-child ul li{
+    margin-bottom: 10px;
+}

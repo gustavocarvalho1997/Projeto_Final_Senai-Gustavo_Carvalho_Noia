@@ -1,0 +1,58 @@
+.footer {
+    padding: 20px 10%;
+    width: 100%;
+    height: 280px;
+    background-color: #F8DDEB;
+  }
+
+.footer h3 {
+    font-size: 2vw;
+}
+
+.footer i {
+        font-size: 4.5vw;
+        color: #142157;
+}
+
+.t-redes, .t-app{
+    text-align: center;
+    color: #370F24;
+  }
+
+.t-redes {
+    padding-bottom: 10px;
+}
+
+.f1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.google-app img{
+    min-width: 180px;
+    height: 15vh;
+    width: 15vw;
+}
+
+.f2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.f2 p{
+    font-size: 3.2vh;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+@media(max-width: 800px){
+    .footer h3 {
+        font-size: 13px;
+    }
+    .footer i {
+        font-size: 40px;
+    }
+}

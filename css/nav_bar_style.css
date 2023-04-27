@@ -1,0 +1,160 @@
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../img/background.png);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #370F24;
+}
+
+/* Menu */
+.menu {
+    width: 100%;
+    height: 78px;
+    background-color: #F8DDEB;
+    font-family: 'Tangerine', cursive;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu .logo {
+    padding: 0;
+}
+
+.menu ul, .menu .logo{
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li {
+    width: 140px;
+    float: left;
+}
+
+.menu a {
+    padding: 25.4px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #F8DDEB;
+    color: #370F24;
+}
+
+.menu ul ul{
+    position: absolute;
+    visibility: hidden;
+}
+
+.menu ul li:hover ul{
+    visibility: visible;
+}
+
+.menu a:hover {
+    transition: all .4s;
+    background-color: #370F24;
+    color: #F8DDEB;
+}
+
+.menu .logo:hover {
+    background-color: #F8DDEB;
+}
+
+.menu ul ul li {
+    float: none;
+    border-bottom: solid 1px #16161d;
+}
+
+.menu ul ul li a {
+    background-color: rgb(174, 248, 252);
+}
+
+/* Label CheckBox Menu */
+label[for="bt_menu"]{
+    padding: 5px;
+    background-color: #F8DDEB;
+    color: #370F24;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+#bt_menu{
+    display: none;
+}
+
+@media(max-width: 800px){
+    label[for="bt_menu"]{
+        display: block;
+    }
+
+    #bt_menu:checked ~ .menu{
+        margin-left: 0;
+    }
+
+    img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .menu {
+        margin-top: 5px;
+        margin-left: -100%;
+        transition: all .4s;
+        display: block;
+    }
+
+    .menu .logo{
+        padding: 0;
+    }
+
+    .menu ul li{
+        width: 100%;
+        float: none;
+        border-top: 0.5px solid #370F24;
+    }
+
+    .menu ul ul{
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .4s;
+    }
+
+    .menu ul li:hover ul{
+        height: auto;
+        max-height: 300px;
+    }
+
+}
+
+/* UTILITÁRIOS */
+
+hr.divisor { 
+    border: 0; 
+    height: 1px; 
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+  }
+
+.div {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin: 50px 0 30px;
+}
+
+.div h2 {
+    margin-bottom: 20px;
+}
